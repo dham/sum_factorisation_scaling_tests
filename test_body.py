@@ -1,5 +1,8 @@
 import firedrake as f
 
+f.parameters['coffee']['optlevel'] = 'O3'
+f.parameters['pyop2_options']['opt_level'] = 'O3'
+f.parameters['pyop2_options']['simd_isa'] = 'avx'
 f.parameters["pyop2_options"]["lazy_evaluation"] = False
 
 
